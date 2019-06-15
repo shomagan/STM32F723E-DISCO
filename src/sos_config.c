@@ -417,7 +417,7 @@ const devfs_device_t devfs_list[] = {
 	DEVFS_DEVICE("spi3", mcu_spi, 3, 0, 0, 0666, SOS_USER_ROOT, S_IFCHR),
     DEVFS_DEVICE("qspi0", mcu_qspi, 0, &qspi0_config, 0, 0666, SOS_USER_ROOT, S_IFCHR),
 //                device_name  periph_name    handle_port, handle_config,      handle_state, mode_value, uid_value,     device_type) {
-    DEVFS_DEVICE("fmc_psram0", mcu_emc_psram, 0,           &fmc_psram0_config, 0,            0666,       SOS_USER_ROOT, S_IFCHR),
+    DEVFS_DEVICE("emc0", mcu_emc_psram, 0,           &fmc_psram0_config, 0,            0666,       SOS_USER_ROOT, S_IFCHR),
     DEVFS_DEVICE("lcd0", mcu_emc_fmc_ahb, 0,                 &lcd0_config      , 0,            0666,       SOS_USER_ROOT, S_IFCHR),
     DEVFS_DEVICE("sai2", mcu_sai_dma, 2,                 &sai2_config      , 0,            0666,       SOS_USER_ROOT, S_IFCHR),
     DEVFS_DEVICE("sai3", mcu_sai_dma, 3,                 &sai3_config      , 0,            0666,       SOS_USER_ROOT, S_IFCHR),
